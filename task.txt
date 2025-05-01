@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 This is mmy first git task
 FeatureX change
+=======
+FeatureY conflicting change
+>>>>>>> featureY
