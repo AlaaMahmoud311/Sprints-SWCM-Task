@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Blog - Home</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -18,35 +19,35 @@
         </nav>
     </header>
 
-    <main>
-        <section id="blog-list">
+    <main class="main-container">
+        <section id="blog-list" class="blog-list">
             <h2>Recent Posts</h2>
-            <article>
+            <article class="post-preview">
                 <h3><a href="#post1">Getting Started with Web Development</a></h3>
                 <p>Learn the basics of HTML, CSS, and JavaScript to begin your journey as a web developer.</p>
                 <time datetime="2023-05-15">May 15, 2023</time>
             </article>
 
-            <article>
+            <article class="post-preview">
                 <h3><a href="#post2">CSS Tips and Tricks</a></h3>
                 <p>Discover some useful CSS techniques to make your websites look more professional.</p>
                 <time datetime="2023-06-02">June 2, 2023</time>
             </article>
 
-            <article>
+            <article class="post-preview">
                 <h3><a href="#post3">Introduction to JavaScript</a></h3>
                 <p>Understand the fundamentals of JavaScript and how to add interactivity to your websites.</p>
                 <time datetime="2023-06-20">June 20, 2023</time>
             </article>
         </section>
 
-        <section id="blog-details">
-            <article id="post1">
+        <section id="blog-details" class="blog-details">
+            <article id="post1" class="full-post">
                 <h1>Getting Started with Web Development</h1>
                 <address>By Jane Doe</address>
                 <time datetime="2023-05-15">Published on May 15, 2023</time>
                 
-                <img src="web-dev.jpg" alt="Web development tools on a desk" width="600">
+                <img src="web-dev.jpg" alt="Web development tools on a desk" class="post-image">
                 
                 <p>Welcome to the exciting world of web development! This guide will help you take your first steps.</p>
                 
@@ -58,15 +59,15 @@
                 </ul>
                 
                 <p>For more information, check out these <a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a>.</p>
-                <p><a href="#blog-list">Back to posts</a></p>
+                <p><a href="#blog-list" class="back-link">Back to posts</a></p>
             </article>
 
-            <article id="post2">
+            <article id="post2" class="full-post">
                 <h1>CSS Tips and Tricks</h1>
                 <address>By John Smith</address>
                 <time datetime="2023-06-02">Published on June 2, 2023</time>
                 
-                <img src="css-tricks.jpg" alt="CSS code on a screen" width="600">
+                <img src="css-tricks.jpg" alt="CSS code on a screen" class="post-image">
                 
                 <p>CSS can transform your websites from basic to beautiful. Here are some professional techniques:</p>
                 
@@ -77,15 +78,15 @@
                 </ol>
                 
                 <p>Learn more from the <a href="https://css-tricks.com" target="_blank">CSS-Tricks website</a>.</p>
-                <p><a href="#blog-list">Back to posts</a></p>
+                <p><a href="#blog-list" class="back-link">Back to posts</a></p>
             </article>
 
-            <article id="post3">
+            <article id="post3" class="full-post">
                 <h1>Introduction to JavaScript</h1>
                 <address>By Alex Johnson</address>
                 <time datetime="2023-06-20">Published on June 20, 2023</time>
                 
-                <img src="javascript.jpg" alt="JavaScript code example" width="600">
+                <img src="javascript.jpg" alt="JavaScript code example" class="post-image">
                 
                 <p>JavaScript brings your websites to life. Here's what you need to know to get started:</p>
                 
@@ -96,9 +97,13 @@
                 </ul>
                 
                 <p>For comprehensive tutorials, visit <a href="https://javascript.info" target="_blank">The Modern JavaScript Tutorial</a>.</p>
-                <p><a href="#blog-list">Back to posts</a></p>
+                <p><a href="#blog-list" class="back-link">Back to posts</a></p>
             </article>
         </section>
     </main>
+
+    <footer>
+        <p>&copy; 2023 My Blog. All rights reserved.</p>
+    </footer>
 </body>
 </html>
